@@ -79,5 +79,5 @@ Generating a CBF map may help with:
 9. Petcharunpaisan, S., Ramalho, J., & Castillo, M. (2010). Arterial spin labeling in neuroimaging. World journal of radiology, 2(10), 384.
 
 ### Contributors
-- Safa Sanami, PhD in Physics, Quantitative Physiological Imaging Lab
-- Hendrale Gresseau, BSc Honours Physics, Concentration: Biophysics.
+[1] Safa Sanami, PhD in Physics, Quantitative Physiological Imaging Lab
+[2] Hendrale Gresseau, BSc Honours Physics, Concentration: Biophysics.
