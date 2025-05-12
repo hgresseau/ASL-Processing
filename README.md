@@ -67,6 +67,8 @@ Generating a CBF map may help with:
 
 *Note: For students in Dr. Gauthier's lab, ask Dr. Gauthier for more details, including access. 
 
+##
+ 
 #### References 📚
 1. Roher, A. E., Debbins, J. P., Malek-Ahmadi, M., Chen, K., Pipe, J. G., Maze, S., ... & Beach, T. G. (2012). Cerebral blood flow in Alzheimer’s disease. Vascular health and risk management, 599-611.
 2. Goldsmith, H. S. (2022). Alzheimer’s disease: a decreased cerebral blood flow to critical intraneuronal elements is the cause. Journal of Alzheimer’s Disease, 85(4), 1419-1422.
@@ -78,6 +80,8 @@ Generating a CBF map may help with:
 8. Ferré, J. C., Bannier, E., Raoult, H., Mineur, G., Carsin-Nicol, B., & Gauvrit, J. Y. (2013). Arterial spin labeling (ASL) perfusion: techniques and clinical use. Diagnostic and interventional imaging, 94(12), 1211-1223.
 9. Petcharunpaisan, S., Ramalho, J., & Castillo, M. (2010). Arterial spin labeling in neuroimaging. World journal of radiology, 2(10), 384.
 
+##
+ 
 ### Contributors 📝
 **Sanami, Safa**. PhD in Physics, Quantitative Physiological Imaging Lab
 
