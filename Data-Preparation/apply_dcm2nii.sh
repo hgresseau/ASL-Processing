@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Safa Sanami, created [insert date here]
+# Hendrale Gresseau, modified Fall/Winter 2024-25 semester 
+
 participant_dir=${1}
 participant=${2}
 
