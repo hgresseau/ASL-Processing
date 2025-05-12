@@ -1,3 +1,6 @@
+% Code by Hendrale Gresseau
+% Approved by Safa Sanami
+
 % Define paths
 data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
 addpath('/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/NIfTI_tools/')
