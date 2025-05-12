@@ -6,7 +6,8 @@ This repository contains documentation and scripts (Matlab, Linux (Shell)) to pe
 ### What is ASL?🤔
 Arterial spin labelling (ASL) is a non-invasive MRI technique widely used in neurodegenerative research (including Alzheimer's) to quantify blood flow (also referred to as perfusion). [1,2,3] It measures the amount of blood volume (mL) that flows through 100 grams of tissue per unit time (measured in minutes). [4,5] This technique makes use of the intrinsic magnetic spin property of hydrogen nuclei found in the water molecules within the blood. [6,7] An ASL acquisition begins by sending rapid short radiofrequency (RF) pulses in the water molecules in the arteries in the neck [Image 1] to alter their spin orientation by a predefined “flip angle” called the alpha or the excitation angle. This process hence “labels” the blood-water, allowing it to act as an endogenous tracer that will travel to the brain to replace non-labeled blood-water. 
 
-![image](https://github.com/user-attachments/assets/d4e2f536-143b-4d6e-bc78-11b520a9133a) Image 1 The T1-weighted high resolution images from participant COVIRM-016 of this study were used to visualize the process through which blood-water from the arteries in the neck is labeled by an RF pulse (A), travels upwards in the head (B), where it is imaged for analysis (C). [8]
+<img src="[image-url](https://github.com/user-attachments/assets/d4e2f536-143b-4d6e-bc78-11b520a9133a)" alt="Alt Text" width="300" height="200">
+Image 1 The T1-weighted high resolution images from participant COVIRM-016 of this study were used to visualize the process through which blood-water from the arteries in the neck is labeled by an RF pulse (A), travels upwards in the head (B), where it is imaged for analysis (C). [8]
 
 As blood-water travels upward, two images are taken subsequent of one another: one with labeling (called the TAG image), and one without labeling (called the Control image). The time between each image is referred to as the time of repetition (TR) or repetition time, which is a predefined interval during which a three-dimensional brain image (volume) is acquired, where a unit cube is defined as a voxel (3D). For reference, a pixel is the 2-dimensional counterpart of a voxel. 
 
@@ -14,7 +15,8 @@ Additionally, the time between the labelling of the blood-water, and the measure
 
 After acquisition, the TAG image is subtracted from the Control image to remove signal contributions from static tissue (such as the skull and scalp), isolating the small contributions from the labeled blood-water (which is only around 0.5% to 1.5%) that has reached the imaging region. (9) This subtraction yields a perfusion-weighted image, which can be further processed to directly quantify cerebral blood flow (CBF) [see Image 2]. 
 
-![image](https://github.com/user-attachments/assets/b2094886-e3b5-4514-9dc5-c28b8e4577ef) Image 2 The Control and TAG images of participant COVIRM-016 of this study were used to visualize the subtracting of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
+![image](https://github.com/user-attachments/assets/b2094886-e3b5-4514-9dc5-c28b8e4577ef) 
+Image 2 The Control and TAG images of participant COVIRM-016 of this study were used to visualize the subtracting of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
 
 
 ➡️ A ***very good*** introductory source worth taking the time to go through (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html. 
