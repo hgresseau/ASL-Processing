@@ -1,3 +1,6 @@
+% Code template by Safa Sanami
+% Modified by Hendrale Gresseau
+
 clear; clc;
 
 % Define the data path
