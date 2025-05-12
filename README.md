@@ -48,18 +48,25 @@ Generating a CBF map may help with:
 
 **2.** Preprocessing the ASL image
 - Goal: Preparing the ASL image by correcting for head movements, and by removing non-brain tissues (e.g., skull, scalp).
+
 **3.** Extracting Resting-State Volumes 
-- Goal: Selecting the initial resting-state volumes (3D image + time) (no gas manipulation or other intervention). 
+- Goal: Selecting the initial resting-state volumes (3D image + time) (no gas manipulation or other intervention).
+
 **4.** Surround Subtraction
-- Goal: Isolating the perfusion signal. 
+- Goal: Isolating the perfusion signal.
+
 **5.** Quality Control (QC) and Visual Inspection
-- Goal: Removing artifacts and abnormalities. 
+- Goal: Removing artifacts and abnormalities.
+
 **6.** Running BASIL for Perfusion Estimation
-- Goal: Estimating the perfusion maps. 
+- Goal: Estimating the perfusion maps.
+
 **7.** CBF Quantification
 - Goal: Calculating and imaging CBF ((CBF maps).
+
 **8.** Post-Processing
-- Goal: Further refinement of the image. 
+- Goal: Further refinement of the image.
+
 
 ➡️ **Great** Source (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html.
 
