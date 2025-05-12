@@ -58,7 +58,7 @@ Generating a CBF map may help with:
 7. Post-Processing
 - Goal: Further refinement of the image. 
 
-➡️ Source (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html.
+➡️ **Great** Source (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html.
 
 ### What's Needed? 💡
 - Terminal* (BASH [Unix Shell])
