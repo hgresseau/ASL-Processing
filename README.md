@@ -19,6 +19,7 @@ After acquisition, the TAG image is subtracted from the Control image to remove 
 Image 2 The Control and TAG images of participant COVIRM-016 of this study were used to visualize the subtracting of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
 
 
+
 ➡️ A ***very good*** introductory source worth taking the time to go through (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html. 
 
 ### What is CBF, and why it's important?🧐
