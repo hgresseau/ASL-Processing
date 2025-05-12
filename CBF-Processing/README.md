@@ -2,7 +2,7 @@
 
 The codes in this folder are used to perform CBF quantification. 
 
-You will need the following files obtained in the previous step (see [Data-Processing](https://github.com/hgresseau/ASL-Processing/tree/8194ae3b1ac7266898ea987851f34b8212ccb33b/Data-Processing)):
+You will need the following files obtained in the previous step (see [Data-Processing](https://github.com/hgresseau/ASL-Processing/tree/8194ae3b1ac7266898ea987851f34b8212ccb33b/Processing)):
 - 
 
 The codes in this folder serve as examples. You must replace the file names with the ones you have, and adjust to your directories/paths.
@@ -22,14 +22,16 @@ The codes in this folder serve as examples. You must replace the file names with
 - Full instructions for running BASIL are available in the documentation and code provided.
 - The output of BASIL will be the **perfusion-weighted image**.
 
-**7. CBF Quantification**
+**7️⃣ CBF Quantification**
 CBF quantification involves a straightforward calculation using the output from BASIL and a calibration image:
+
 **A. Required Inputs**
-1. Perfusion Image: Generated from BASIL.
-2. M0 Scan (Calibration Image):
+1. **Perfusion Image**: Generated from BASIL.
+2. **M0 Scan** (Calibration Image):
   - The M0 scan is a single-volume calibration scan used for absolute quantification.
-  - The only preprocessing step needed is brain extraction (BET).
+  - The only preprocessing step needed is **brain extraction (BET)**.
+
 **B. Applying the CBF Formula**
 - Use the provided formula in the shared code to compute the CBF map.
-- Inputs: Perfusion Image + Brain-extracted M0 Scan
-- Save the computed CBF Map for further analysis.
+- Inputs: **Perfusion Image + Brain-extracted M0 Scan**
+- Save the computed **CBF Map** for further analysis.
