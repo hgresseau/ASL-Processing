@@ -3,7 +3,7 @@ These codes allow for the preparation of NIfTI files (.nii) from the raw data (i
 
 #### Tools needed 💡
 - Request access to a secured server to retrieve raw DICOM MRI data. 
-- Terminal (Command lines, Bash files)
+- Terminal (for Command lines, Bash files)
 
 # Data Preparation
 
