@@ -1,3 +1,6 @@
+% Code template by Safa Sanami
+% Modified by Hendrale Gresseau
+
 clear
 close all
 
@@ -24,7 +27,6 @@ code_path='/NAS/home/s_sanami/Documents/Scripts/ASLcodes';
 subjects={'017','018','019','020','021','023','024','025','026','030','031'};
 
 for i=1:length(subjects)
-  % here i defined all the paths for inputs and outputs: change them accordingly
 
   % ASL (Perfusion) File Paths
   pcasl = [data_path 'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_asl_sub_new.nii.gz']; 
