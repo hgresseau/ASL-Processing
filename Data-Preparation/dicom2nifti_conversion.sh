@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Safa Sanami, created [insert date here]
+# Hendrale Gresseau, modified Fall/Winter 2024-25 semester 
+
 # This script compresses raw data (DICOM) into usable files (NIfTI)
 
 # Define the base path
