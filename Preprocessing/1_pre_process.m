@@ -6,7 +6,7 @@ addpath(genpath( '/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
 data_path='/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
 code_path='/NAS/home/s_sanami/Documents/Scripts/ASLcodes';
 
-%% patients 
+% patients 
 subjects={'016','017','018','019','020','021','023','024','025','026','030','031'};
 
 for z=1:length(subjects)
@@ -64,10 +64,10 @@ for z=1:length(subjects)
   legend('pitch', 'roll', 'yaw');
   saveas(gcf,[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_motion2.png'], 'png')
 
-  %% File renaiming
+  % File renaiming
   s1=movefile([data_path 'COVIRM-' subjects{z} '/perf/rsub-' subjects{z} '_acq-pcaslDEe1_run-1_asl.nii'],[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_asl_mc.nii']);
   s=movefile([data_path 'COVIRM-' subjects{z} '/perf/rsub-' subjects{z} '_acq-pcaslDEe2_run-1_asl.nii'],[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_bold_mc.nii']);
-  %% BET
+  % BET
   
   cmd=['bet2 ' bold_mc ' ' [bold_mc(1:end-7)] '_brain  -f 0.17 -m']; 
   system(cmd)
