@@ -45,6 +45,7 @@ Generating a CBF map may help with:
 ## Pipeline Overview: 8-Step Process 👩‍💻
 **1.** [DICOM to NIfTI Conversion](https://github.com/hgresseau/ASL-Processing/tree/f41e7a80507452d9fded6480ad077ee6b55bbd94/Data-Preparation)
 - Goal: Preparing the data for CBF processing.
+
 **2.** Preprocessing the ASL image
 - Goal: Preparing the ASL image by correcting for head movements, and by removing non-brain tissues (e.g., skull, scalp).
 **3.** Extracting Resting-State Volumes 
