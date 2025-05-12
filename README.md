@@ -3,7 +3,7 @@ This repository contains documentation and scripts (Matlab, Linux (Shell)) to pe
 
 # CBF Processing
 
-### What is ASL?🤔
+### What is ASL? 🤔
 Arterial spin labelling (ASL) is a non-invasive MRI technique widely used in neurodegenerative research (including Alzheimer's) to quantify blood flow (also referred to as perfusion). [1,2,3] It measures the amount of blood volume (mL) that flows through 100 grams of tissue per unit time (measured in minutes). [4,5] This technique makes use of the intrinsic magnetic spin property of hydrogen nuclei found in the water molecules within the blood. [6,7] An ASL acquisition begins by sending rapid short radiofrequency (RF) pulses in the water molecules in the arteries in the neck [Image 1] to alter their spin orientation by a predefined “flip angle” called the alpha or the excitation angle. This process hence “labels” the blood-water, allowing it to act as an endogenous tracer that will travel to the brain to replace non-labeled blood-water. 
 
 ##
@@ -28,9 +28,9 @@ After acquisition, the TAG image is subtracted from the Control image to remove 
 
 ## 
 
-➡️ A ***very good*** introductory source worth taking the time to go through (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html. 
+➡️ A ***very good*** introductory source worth taking the time to go through: https://pubmed.ncbi.nlm.nih.gov/37492666/. 
 
-### What is CBF, and why it's important?🧐
+### What is CBF, and why it's important? 🧐
 Cerebral blood flow (CBF) is a measure of blood volume (mL) delivery to 100 grams of tissue per unit time (minutes) used to quantify perfusion. [4,5] ASL imaging reveals that CBF often serves as an early physiological biomarker for various neurodegenerative diseases such as Alzheimer's, and potentially COVID-19. [1,2,3] In fact, existing literature supports the use of ASL as an effective method for quantifying changes in CBF, with reduced perfusion recognized as a defining characteristic of early-stage AD. As such, CBF may serve as a potential early physiological biomarker to qualify and quantify changes in cognition, and in brain structure and function that were seemingly induced by the disease. 
 
 Generating a CBF map may help with:
@@ -42,14 +42,25 @@ Generating a CBF map may help with:
    ✅ Indicating the presence of a disease/vius/infection (neurodegenerative or even COVID-19).
    
 
-## Pipeline Overview: [num]-Step [insert here] 👩‍💻
-1. 
+## Pipeline Overview: 7-Step Process 👩‍💻
+1. Preprocessing the ASL image
 - Goal: 
-2. 
+2. Extracting Resting-State Volumes 
+- Goal: 
+3. Surround Subtraction
+- Goal: 
+4. Quality Control (QC) and Visual Inspection
+- Goal: 
+5. Running BASIL for Perfusion Estimation
+- Goal: 
+6. CBF Quantification
+- Goal: 
+7. Post-Processing
 - Goal: 
 
+➡️ Source (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html.
 
-### What's Needed?💡
+### What's Needed? 💡
 - Terminal* (BASH [Unix Shell])
 - FSL* (fslview or fsleyes) (install here: https://fsl.fmrib.ox.ac.uk/fsl/oldwiki/) 
 - MATLAB*
