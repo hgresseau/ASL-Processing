@@ -17,10 +17,13 @@ After acquisition, the TAG image is subtracted from the Control image to remove 
 ### What is CBF, and why it's important?🧐
 Cerebral blood flow (CBF) is a measure of blood volume (mL) delivery to 100 grams of tissue per unit time (minutes) used to quantify perfusion. (4,5) ASL imaging reveals that CBF often serves as an early physiological biomarker for various neurodegenerative diseases such as Alzheimer's, and potentially COVID-19. (1,2,3)  In fact, existing literature supports the use of ASL as an effective method for quantifying changes in CBF, with reduced perfusion recognized as a defining characteristic of early-stage AD. As such, CBF may serve as a potential early physiological biomarker to qualify and quantify changes in cognition, and in brain structure and function that were seemingly induced by the disease. 
 
-Changes in CBF may indicate:
+Generating a CBF map may help with:
 
-   ✅ Changes in brain structure, function or cognition.
-   ✅ The presence of a disease/vius/infection which affects the brain (neurodegenerative or even COVID-19).
+   ✅ Identifying regions of interest (ROIs) with changes in perfusion. 
+   
+   ✅ Quantifying changes in brain structure at certain ROIs.
+   
+   ✅ Indicating the presence of a disease/vius/infection (neurodegenerative or even COVID-19).
    
 
 ## Pipeline Overview: [num]-Step [insert here] 👩‍💻
