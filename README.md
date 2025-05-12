@@ -46,17 +46,17 @@ Generating a CBF map may help with:
 **1.** [DICOM to NIfTI Conversion](https://github.com/hgresseau/ASL-Processing/tree/f41e7a80507452d9fded6480ad077ee6b55bbd94/Data-Preparation)
 - Goal: Preparing the data for CBF processing.
 
-**2.** Preprocessing the ASL image
+**2.** [Preprocessing the ASL image](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/1_pre_process.m)
 - Goal: Preparing the ASL image by correcting for head movements, and by removing non-brain tissues (e.g., skull, scalp).
 
-**3.** Extracting Resting-State Volumes 
+**3.** [Extracting Resting-State Volumes](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/2_extract_resting_volumes.m)
 - Goal: Selecting the initial resting-state volumes (3D image + time) (no gas manipulation or other intervention).
 
-**4.** Surround Subtraction
+**4.** [Surround Subtraction](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/3_surround_sub.m)
 - Goal: Isolating the perfusion signal.
 
-**5.** Quality Control (QC) and Visual Inspection
-- Goal: Removing artifacts and abnormalities.
+**5.** [Quality Control (QC) and Visual Inspection](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/4_new_method.m)
+- Goal: [Removing volumes](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/5_remove_vols.m) with too many [artifacts and abnormalities](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/6_negative_to_zero.m).
 
 **6.** Running BASIL for Perfusion Estimation
 - Goal: Estimating the perfusion maps.
