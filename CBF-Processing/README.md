@@ -22,7 +22,7 @@ The codes in this folder serve as examples. You must replace the file names with
 - Full instructions for running BASIL are available in the documentation and code provided.
 - The output of BASIL will be the **perfusion-weighted image**.
 
-**7️⃣ CBF Quantification**
+**7️⃣ [CBF Quantification](https://github.com/hgresseau/ASL-Processing/blob/cc1ef5cb6f853961e8a8e64d25262cf80781d49a/CBF-Processing/8_CBF_processing.m)**
 CBF quantification involves a straightforward calculation using the output from BASIL and a calibration image:
 
 **A. Required Inputs**
