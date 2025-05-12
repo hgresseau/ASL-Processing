@@ -8,7 +8,7 @@ Arterial spin labelling (ASL) is a non-invasive MRI technique widely used in neu
 
 <img src="https://github.com/user-attachments/assets/d4e2f536-143b-4d6e-bc78-11b520a9133a" alt="Alt Text" width="1000" height="350">
 Image 1 The T1-weighted high resolution images from participant COVIRM-016 of this study were used to visualize the process through which blood-water from the arteries in the neck is labeled by an RF pulse (A), travels upwards in the head (B), where it is imaged for analysis (C). [8]
-
+ <br>
 As blood-water travels upward, two images are taken subsequent of one another: one with labeling (called the TAG image), and one without labeling (called the Control image). The time between each image is referred to as the time of repetition (TR) or repetition time, which is a predefined interval during which a three-dimensional brain image (volume) is acquired, where a unit cube is defined as a voxel (3D). For reference, a pixel is the 2-dimensional counterpart of a voxel. 
 
 Additionally, the time between the labelling of the blood-water, and the measurement of the MRI signal is referred to as the time of echo (TE), or echo time. Since different tissues allow the labeled blood-water to relax at different rates, acquiring images at two distinct echo times (TE1 and TE2) allows for enhanced contrast between tissues. 
@@ -17,8 +17,7 @@ After acquisition, the TAG image is subtracted from the Control image to remove 
 
 <img src="https://github.com/user-attachments/assets/b2094886-e3b5-4514-9dc5-c28b8e4577ef" alt="Alt Text" width="1000" height="300">
 Image 2 The Control and TAG images of participant COVIRM-016 of this study were used to visualize the subtracting of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
-
-
+ <br> 
 
 ➡️ A ***very good*** introductory source worth taking the time to go through (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html. 
 
