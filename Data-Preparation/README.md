@@ -1,6 +1,5 @@
 ### Overview  
-These codes allow for the preparation of NIfTI files (.nii) from the raw data coming directly from the MRI taken from the online server, such as CAIN. 
-Here is an overview of the pipeline to prepare your data for CBF processing. 
+These codes allow for the preparation of NIfTI files (.nii) from the raw data (in DICOM format (.dcm)) coming directly from the MRI. This raw data is available in a secured online server, such as CAIN. Below is an overview of the pipeline to prepare your data for CBF processing. 
 
 # Data Preparation
 
