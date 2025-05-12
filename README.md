@@ -1,7 +1,7 @@
 ### Overview  
 This repository contains documentation and scripts (Matlab, Linux (Shell)) to perform cerebral blood flow (CBF) processing on arterial spin labelling (ASL) MRI data. 
 
-# CBF Processing
+# CBF Processing 🧠
 
 ### What is ASL? 🤔
 Arterial spin labelling (ASL) is a non-invasive MRI technique widely used in neurodegenerative research (including Alzheimer's) to quantify blood flow (also referred to as perfusion). [1,2,3] It measures the amount of blood volume (mL) that flows through 100 grams of tissue per unit time (measured in minutes). [4,5] This technique makes use of the intrinsic magnetic spin property of hydrogen nuclei found in the water molecules within the blood. [6,7] An ASL acquisition begins by sending rapid short radiofrequency (RF) pulses in the water molecules in the arteries in the neck [Image 1] to alter their spin orientation by a predefined “flip angle” called the alpha or the excitation angle. This process hence “labels” the blood-water, allowing it to act as an endogenous tracer that will travel to the brain to replace non-labeled blood-water. 
@@ -67,7 +67,7 @@ Generating a CBF map may help with:
 
 *Note: For students in Dr. Gauthier's lab, ask Dr. Gauthier for more details, including access. 
 
-#### References:
+#### References 📚
 1. Roher, A. E., Debbins, J. P., Malek-Ahmadi, M., Chen, K., Pipe, J. G., Maze, S., ... & Beach, T. G. (2012). Cerebral blood flow in Alzheimer’s disease. Vascular health and risk management, 599-611.
 2. Goldsmith, H. S. (2022). Alzheimer’s disease: a decreased cerebral blood flow to critical intraneuronal elements is the cause. Journal of Alzheimer’s Disease, 85(4), 1419-1422.
 3. Ciacciarelli, A., Sette, G., Giubilei, F., & Orzi, F. (2020). Chronic cerebral hypoperfusion: An undefined, relevant entity. Journal of clinical neuroscience, 73, 8-12.
@@ -78,7 +78,7 @@ Generating a CBF map may help with:
 8. Ferré, J. C., Bannier, E., Raoult, H., Mineur, G., Carsin-Nicol, B., & Gauvrit, J. Y. (2013). Arterial spin labeling (ASL) perfusion: techniques and clinical use. Diagnostic and interventional imaging, 94(12), 1211-1223.
 9. Petcharunpaisan, S., Ramalho, J., & Castillo, M. (2010). Arterial spin labeling in neuroimaging. World journal of radiology, 2(10), 384.
 
-### Contributors
+### Contributors 📝
 **Sanami, Safa**. PhD in Physics, Quantitative Physiological Imaging Lab
 
 **Gresseau, Hendrale**. BSc Honours Physics, Concentration: Biophysics.
