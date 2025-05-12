@@ -5,7 +5,7 @@ The codes in this folder are used to preprocess ASL data. As such, a great under
 You will need the following files obtained in the previous step (see [Data-Preparation](https://github.com/hgresseau/ASL-Processing/tree/8194ae3b1ac7266898ea987851f34b8212ccb33b/Data-Preparation)):
 - **sub-###_acq-pcaslDEe1_run-1_asl.nii.gz** (pCASL)
 - **sub-###_acq-pcaslDEe2_run-1_asl.nii.gz** (BOLD)
-- surround_subtraction.m (download this MATLAB file which contains a function called in subsequent steps to subtract the TAG from the Control image)
+- **surround_subtraction.m** (download this MATLAB file which contains a function called in subsequent steps to subtract the TAG from the Control image)
 
 The codes in this folder serve as examples. You must replace the file names with the ones you have, and adjust to your directories/paths.
 
