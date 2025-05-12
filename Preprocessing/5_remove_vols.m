@@ -1,3 +1,5 @@
+% Code by Hendrale Gresseau & Safa Sanami
+
 close all;
 
 % Define paths
