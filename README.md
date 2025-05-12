@@ -15,7 +15,7 @@ Additionally, the time between the labelling of the blood-water, and the measure
 
 After acquisition, the TAG image is subtracted from the Control image to remove signal contributions from static tissue (such as the skull and scalp), isolating the small contributions from the labeled blood-water (which is only around 0.5% to 1.5%) that has reached the imaging region. (9) This subtraction yields a perfusion-weighted image, which can be further processed to directly quantify cerebral blood flow (CBF) [see Image 2]. 
 
-<img src="https://github.com/user-attachments/assets/b2094886-e3b5-4514-9dc5-c28b8e4577ef" alt="Alt Text" width="1000" height="350">
+<img src="https://github.com/user-attachments/assets/b2094886-e3b5-4514-9dc5-c28b8e4577ef" alt="Alt Text" width="1000" height="300">
 Image 2 The Control and TAG images of participant COVIRM-016 of this study were used to visualize the subtracting of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
 
 
