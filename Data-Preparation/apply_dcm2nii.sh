@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Safa Sanami, created [insert date here]
-# Hendrale Gresseau, modified Fall/Winter 2024-25 semester 
+# Hendrale Gresseau, Fall/Winter 2024-25 semester.
+# Verified by Safa Sanami.
 
 participant_dir=${1}
 participant=${2}
