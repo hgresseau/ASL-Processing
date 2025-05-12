@@ -1,3 +1,6 @@
+% Code by Hendrale Gresseau
+% Approved by Safa Sanami
+
 % Define the directory where the file will be saved
 data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
 
