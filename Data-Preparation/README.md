@@ -1,11 +1,9 @@
 ### Overview  
 These codes allow for the preparation of NIfTI files (.nii) from the raw data (in DICOM format (.dcm)) coming directly from the MRI. This raw data is available in a secured online server, such as CAIN. Below is an overview of the pipeline to prepare your data for CBF processing. 
 
-#### Tools needed:
+#### Tools needed 💡
 - Request access to a secured server to retrieve raw DICOM MRI data. 
 - Terminal (Command lines, Bash files)
-
-##
 
 # Data Preparation
 
