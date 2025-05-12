@@ -28,5 +28,4 @@ do
     mv "$participant_dir/perf/sub-${participant}_acq-pcaslDEe1_run-1_asl_e1.json" "$participant_dir/perf/sub-${participant}_acq-pcaslDEe1_run-1_asl.json" 
     mv "$participant_dir/perf/sub-${participant}_acq-pcaslDEe1_run-1_asl_e2.json" "$participant_dir/perf/sub-${participant}_acq-pcaslDEe2_run-1_asl.json"
 
-
 done
