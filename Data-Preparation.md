@@ -26,11 +26,15 @@ Here is an overview of the pipeline to prepare your data for CBF processing.
 
 8️⃣ Repeat this procedure for all your patients. 
 
+## 
+
 ### Transferring the data into your remote machine
 
 9️⃣ Go to your local machine in the Konsole terminal and write the following to transfer all the files into the server. Note that this might take a few minutes (5-10 minutes) due to the amount of DICOM (.dcm) files. 
 
 > ***scp -r ~/Documents/Hendrale/* s_sanami@perf-hpc01:~/Documents/covirm_data_processing/Hendrale/data/**
+
+## 
 
 ### Conversion to NIfTI (.nii) files in your remote machine
 
