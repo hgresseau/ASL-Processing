@@ -4,7 +4,7 @@ Here is an overview of the pipeline to prepare your data for CBF processing.
 
 # Data Preparation
 
-### In your local machine
+### In your local machine 🖥
 
 1️⃣ Create folders for each participant. In each folder, create a folder called "anat" (short for anatomy), and another folder called "perf" (short for perfusion). 
 
@@ -36,7 +36,7 @@ Here is an overview of the pipeline to prepare your data for CBF processing.
 
 ## 
 
-### Conversion to NIfTI (.nii) files in your remote machine
+### Conversion to NIfTI (.nii) files in your remote machine 🖥
 
 🔟 use the files **dicom2nifti_conversion.sh** and **apply_dcm2nii.sh** to convert the files into the desired format. Write the following commands (one at a time) in the Terminal. 
 > **module avail** | provides a list of all the modules available in your directory.
@@ -48,14 +48,14 @@ Here is an overview of the pipeline to prepare your data for CBF processing.
 ## 
 
 ### Output 
-#### anat folder
+#### anat folder 🗂
 Here, you will find the high and low resolution images. .gz indicates that the data is zipped. Also, replace "###" with your participant number ID. 
 
 > **sub-###_acq-MPRAGE0p9_run-1_T1w.nii.gz** | T1-Weighted, High Resolution (T1HR) image
 
 > **sub-###_acq-MPRAGE1p5_run-1_T1w.nii.gz** | T1-Weighted, Low Resolution (T1LR) image
 
-#### perf folder
+#### perf folder 🗂
 Here, you will find the **pCASL** file; 
 > **sub-###_acq-pcaslDEe1_run-1_asl.nii.gz**
 
