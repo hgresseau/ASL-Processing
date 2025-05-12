@@ -80,8 +80,6 @@ Generating a CBF map may help with:
 8. Ferré, J. C., Bannier, E., Raoult, H., Mineur, G., Carsin-Nicol, B., & Gauvrit, J. Y. (2013). Arterial spin labeling (ASL) perfusion: techniques and clinical use. Diagnostic and interventional imaging, 94(12), 1211-1223.
 9. Petcharunpaisan, S., Ramalho, J., & Castillo, M. (2010). Arterial spin labeling in neuroimaging. World journal of radiology, 2(10), 384.
 
-##
- 
 ### Contributors 📝
 **Sanami, Safa**. PhD in Physics, Quantitative Physiological Imaging Lab
 
