@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Hendrale Gresseau, Fall/Winter 2024-25 semester 
+# Hendrale Gresseau, Fall/Winter 2024-25 semester. 
 # Verified by Safa Sanami.
 
 # This script compresses raw data (DICOM) into usable files (NIfTI)
