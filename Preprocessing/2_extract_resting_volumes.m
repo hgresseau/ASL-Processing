@@ -3,7 +3,7 @@ clear; clc;
 % Define the data path
 data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
 
-%% patients rest
+% patients rest
 subjects={'016','017','018','019','020','021','023','024','025','026','030','031'};
 
 % Number of volumes to extract
