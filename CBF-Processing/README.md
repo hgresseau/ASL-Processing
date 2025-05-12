@@ -37,3 +37,8 @@ CBF quantification involves a straightforward calculation using the output from 
 - Use the provided formula in the shared code to compute the CBF map.
 - Inputs: **Perfusion Image + Brain-extracted M0 Scan**
 - Save the computed **[CBF Map](https://github.com/hgresseau/ASL-Processing/blob/bea8d59a7def6a836afd4f884ab7484c21f87947/CBF-Processing/9_CBF_map.m)** for further analysis.
+
+### Contributors 📝
+**Sanami, Safa**. PhD in Physics, Quantitative Physiological Imaging Lab
+
+**Gresseau, Hendrale**. BSc in Honours Physics, Concentration: Biophysics.
