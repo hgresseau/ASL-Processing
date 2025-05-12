@@ -46,7 +46,7 @@ These codes allow for the preparation of NIfTI files (.nii) from the raw data (i
 
 ## 
 
-### Output 
+### OUTPUT
 #### anat folder 🗂
 Here, you will find the high and low resolution images. .gz indicates that the data is zipped. Also, replace "###" with your participant number ID. 
 
