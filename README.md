@@ -61,7 +61,7 @@ Generating a CBF map may help with:
 **6.** [Running BASIL for Perfusion Estimation](https://github.com/hgresseau/ASL-Processing/tree/0628f6f867770f637a77e0dd631b3f3df72bdf61/Preprocessing)
 - Goal: Estimating the perfusion maps.
 
-**7.** [CBF Quantification]((https://github.com/hgresseau/ASL-Processing/blob/0ddf50cde2abeca0cf08caa9f0c9f3c27de83b8d/CBF-Processing))
+**7.** [CBF Quantification](https://github.com/hgresseau/ASL-Processing/blob/0ddf50cde2abeca0cf08caa9f0c9f3c27de83b8d/CBF-Processing)
 - Goal: Calculating and imaging CBF (CBF maps).
 
 **8.** Post-Processing
