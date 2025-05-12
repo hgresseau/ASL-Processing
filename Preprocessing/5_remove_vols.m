@@ -1,4 +1,5 @@
-% Code by Hendrale Gresseau & Safa Sanami
+% Code by Hendrale Gresseau 
+% Approved by Safa Sanami
 
 close all;
 
