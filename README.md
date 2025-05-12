@@ -44,19 +44,19 @@ Generating a CBF map may help with:
 
 ## Pipeline Overview: 7-Step Process 👩‍💻
 1. Preprocessing the ASL image
-- Goal: 
+- Goal: Preparing the ASL image by correcting for head movements, and by removing non-brain tissues (e.g., skull, scalp).
 2. Extracting Resting-State Volumes 
-- Goal: 
+- Goal: Selecting the initial resting-state volumes (3D image + time) (no gas manipulation or other intervention). 
 3. Surround Subtraction
-- Goal: 
+- Goal: Isolating the perfusion signal. 
 4. Quality Control (QC) and Visual Inspection
-- Goal: 
+- Goal: Removing artifacts and abnormalities. 
 5. Running BASIL for Perfusion Estimation
-- Goal: 
+- Goal: Estimating the perfusion maps. 
 6. CBF Quantification
-- Goal: 
+- Goal: Calculating and imaging CBF ((CBF maps).
 7. Post-Processing
-- Goal: 
+- Goal: Further refinement of the image. 
 
 ➡️ Source (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html.
 
@@ -77,3 +77,7 @@ Generating a CBF map may help with:
 7. Chappel, M., Okell, T., Jenkinson, M. Short introduction to MRI Physics for Neuroimaging. URL: https://www.fmrib.ox.ac.uk/primers/appendices/mri_physics.pdf
 8. Ferré, J. C., Bannier, E., Raoult, H., Mineur, G., Carsin-Nicol, B., & Gauvrit, J. Y. (2013). Arterial spin labeling (ASL) perfusion: techniques and clinical use. Diagnostic and interventional imaging, 94(12), 1211-1223.
 9. Petcharunpaisan, S., Ramalho, J., & Castillo, M. (2010). Arterial spin labeling in neuroimaging. World journal of radiology, 2(10), 384.
+
+### Contributors
+- Safa Sanami, PhD in Physics, Quantitative Physiological Imaging Lab
+- Hendrale Gresseau, BSc Honours Physics, Concentration: Biophysics.
