@@ -42,22 +42,22 @@ Generating a CBF map may help with:
    ✅ Indicating the presence of a disease/vius/infection (neurodegenerative or even COVID-19).
    
 
-## Pipeline Overview: 7-Step Process 👩‍💻
-0. DICOM to NIfTI Conversion
-- Goal: [Preparing the data for CBF processing](https://github.com/hgresseau/ASL-Processing/tree/f41e7a80507452d9fded6480ad077ee6b55bbd94/Data-Preparation).
-2. Preprocessing the ASL image
+## Pipeline Overview: 8-Step Process 👩‍💻
+**1.** [DICOM to NIfTI Conversion](https://github.com/hgresseau/ASL-Processing/tree/f41e7a80507452d9fded6480ad077ee6b55bbd94/Data-Preparation)
+- Goal: Preparing the data for CBF processing.
+**2.** Preprocessing the ASL image
 - Goal: Preparing the ASL image by correcting for head movements, and by removing non-brain tissues (e.g., skull, scalp).
-2. Extracting Resting-State Volumes 
+**3.** Extracting Resting-State Volumes 
 - Goal: Selecting the initial resting-state volumes (3D image + time) (no gas manipulation or other intervention). 
-3. Surround Subtraction
+**4.** Surround Subtraction
 - Goal: Isolating the perfusion signal. 
-4. Quality Control (QC) and Visual Inspection
+**5.** Quality Control (QC) and Visual Inspection
 - Goal: Removing artifacts and abnormalities. 
-5. Running BASIL for Perfusion Estimation
+**6.** Running BASIL for Perfusion Estimation
 - Goal: Estimating the perfusion maps. 
-6. CBF Quantification
+**7.** CBF Quantification
 - Goal: Calculating and imaging CBF ((CBF maps).
-7. Post-Processing
+**8.** Post-Processing
 - Goal: Further refinement of the image. 
 
 ➡️ **Great** Source (readings, videos, tutorials): https://asl-docs.readthedocs.io/en/latest/analysis_guide.html.
