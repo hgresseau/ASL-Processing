@@ -1,3 +1,6 @@
+% Code template by Safa Sanami
+% Modified by Hendrale Gresseau
+
 % Add necessary paths for NIfTI and SPM toolboxes
 addpath(genpath('/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
 addpath(genpath('/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
