@@ -1,3 +1,6 @@
+% Code by Hendrale Gresseau 
+% Approved by Safa Sanami
+
 close all;
 
 % Define paths
