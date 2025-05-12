@@ -36,8 +36,8 @@ These codes allow for the preparation of NIfTI files (.nii) from the raw data (i
 9️⃣ Go to your local machine in your terminal and write the following to transfer all the files into the server. Note that this might take a few minutes (5-10 minutes) due to the amount of DICOM (.dcm) files. 
 
 > ***scp -r ~/path/to/your/raw/data/* nameofyour@local-machine:~/path/to/your/remote/data/folder/**
+> example: *scp -r ~/Documents/Hendrale/* s_sanami@perf-hpc01:~/Documents/covirm_data_processing/Hendrale/data/
 
-example: *scp -r ~/Documents/Hendrale/* s_sanami@perf-hpc01:~/Documents/covirm_data_processing/Hendrale/data/
 ## 
 
 ### Conversion to NIfTI (.nii) files in your remote machine 🖥
