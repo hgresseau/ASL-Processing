@@ -38,7 +38,7 @@ Here is an overview of the pipeline to prepare your data for CBF processing.
 
 ### Conversion to NIfTI (.nii) files in your remote machine 🖥
 
-🔟 use the files **dicom2nifti_conversion.sh** and **apply_dcm2nii.sh** to convert the files into the desired format. Write the following commands (one at a time) in the Terminal. 
+🔟 use the files **dicom2nifti_conversion.sh** and **apply_dcm2nii.sh** (here: Data-Preparation/apply_dcm2nii.sh) to convert the files into the desired format. Write the following commands (one at a time) in the Terminal. 
 > **module avail** | provides a list of all the modules available in your directory.
 
 > **module load dcm2niix/1.0.20220720** | loads the module needed to convert .dcm into .nii.
