@@ -1,8 +1,6 @@
 clear
 close all
 
-% This code does preprocesing, brain extraction, motion correction and regressor cleaning for both echoes. This is an example. As such, you must replace the file names with the ones you have, and adjust the directories.
-
 addpath(genpath( '/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
 addpath(genpath( '/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
 data_path='/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
