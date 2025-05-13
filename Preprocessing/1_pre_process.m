@@ -1,5 +1,5 @@
-% Code template by Safa Sanami
-% Modified by Hendrale Gresseau
+% Code by Safa Sanami
+% Modified by Hendrale Gresseau, Winter 2025
 
 clear
 close all
