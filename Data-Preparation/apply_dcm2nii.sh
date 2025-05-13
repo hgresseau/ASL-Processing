@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Code by Hendrale Gresseau, Fall/Winter 2024-25 semester.
+# Code by Hendrale Gresseau, Fall 2024.
 # Verified by Safa Sanami.
 
 participant_dir=${1}
