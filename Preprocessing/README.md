@@ -76,4 +76,4 @@ After subtraction, the processed ASL image should be examined for artifacts and 
 ### Contributors 📝
 **Sanami, Safa**. PhD in Physics, Quantitative Physiological Imaging Lab
 
-**Gresseau, Hendrale**. BSc Honours Physics, Concentration: Biophysics.
+**Gresseau, Hendrale**. BSc in Honours Physics, Concentration: Biophysics.
