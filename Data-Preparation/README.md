@@ -78,4 +78,4 @@ You will also notice .json files. These files are important for subsequent steps
 ### Contributors 📝
 **Sanami, Safa**. PhD in Physics, Quantitative Physiological Imaging Lab
 
-**Gresseau, Hendrale**. BSc Honours Physics, Concentration: Biophysics.
+**Gresseau, Hendrale**. BSc in Honours Physics, Concentration: Biophysics.
