@@ -1,5 +1,5 @@
 ### Overview  
-This repository contains documentation and scripts (Matlab, Linux (Shell)) to perform cerebral blood flow (CBF) processing on arterial spin labelling (ASL) MRI data using FSL and ANTs. 
+This repository contains documentation and scripts (Matlab, Linux (Shell)) to perform cerebral blood flow (CBF) processing on arterial spin labelling (ASL) MRI data using FSL and ANTs. *Note that all the codes are examples. The directories/paths indicated in the codes should be changed to match yours.*
 
 # CBF Processing 🧠
 
