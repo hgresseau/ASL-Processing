@@ -1,5 +1,5 @@
-% Code template by Safa Sanami
-% Modified by Hendrale Gresseau
+% Code by Safa Sanami
+% Modified by Hendrale Gresseau, Winter 2025
 
 % Add necessary paths for NIfTI and SPM toolboxes
 addpath(genpath('/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
