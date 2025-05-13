@@ -61,7 +61,8 @@ ASL imaging involves alternating TAG and Control volumes. To isolate the perfusi
 
 **5️⃣ [Quality Control (QC) and Visual Inspection](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/4_new_method.m)**
 
-After subtraction, the processed ASL image should be examined for artifacts and abnormalities:
+Here, a first visual inspection was done in each participant by comparing the CBF value of one voxel to the whole-brain mean CBF. If the absolute value of a voxel differed from the mean by more than 3 standard deviations (SD), the **voxel** was **labeled as an outlier**. Finally, if more than 30% of a brain volume had outliers, the **volume** was **flagged as a potential outlier**. After a first visual inspection, the processed ASL image are further examined for other artifacts and abnormalities:
+
 - Open the **subtracted image** in FSLView. (type **fslview** in the terminal)
 - Press **Ctrl+T** to scroll through the volumes and observe signal variations.
 - **Check for the following issues**:
@@ -69,7 +70,8 @@ After subtraction, the processed ASL image should be examined for artifacts and 
   - **Hyperintense voxels**: Identify and remove any unusually bright (artifact) voxels.
   - **Motion-induced artifacts**: Compare with motion correction outputs to identify problematic volumes.
 - **Meeting Requirement**: If any abnormalities are observed, discuss them with someone more experienced (grad student or professor) before proceeding further.
-- If necessary, **[remove the affected volumes](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/5_remove_vols.m)** and save the corrected image.
+- A full visual inspection leads to the removal of certain flagged brain volumes, to the discretion of the inspector (see Dr. Gauthier or a graduate student). Hence, if required, **[remove the affected volumes](https://github.com/hgresseau/ASL-Processing/blob/3d8d82b80c39da1cf7d7a9a6110e4cbe37b07126/Preprocessing/5_remove_vols.m)** and save the corrected image.
+
 
 ## 
 
