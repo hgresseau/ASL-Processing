@@ -1,5 +1,5 @@
 ### Overview  
-This repository contains documentation and scripts (Matlab, Linux (Shell)) to perform cerebral blood flow (CBF) processing on arterial spin labelling (ASL) MRI data using FSL and ANTs. *Note that all the codes in this repository are **examples**. The directories/paths indicated in the codes should be changed to match yours.*
+This repository contains documentation and scripts (Matlab, Linux (Shell)) to perform cerebral blood flow (CBF) processing on arterial spin labelling (ASL) MRI data using FSL and ANTs. 
 
 # CBF Processing 🧠
 
@@ -10,7 +10,7 @@ Arterial spin labelling (ASL) is a non-invasive MRI technique widely used in neu
  
 <img src="https://github.com/user-attachments/assets/d4e2f536-143b-4d6e-bc78-11b520a9133a" alt="Alt Text" width="1000" height="270">
 
-**Image 1** The T1-weighted high resolution images from participant COVIRM-016 of this study were used to visualize the process through which blood-water from the arteries in the neck is labeled by an RF pulse (A), travels upwards in the head (B), where it is imaged for analysis (C). [8]
+**Image 1** Visualization of the process through which blood-water from the arteries in the neck is labeled by an RF pulse (A), travels upwards in the head (B), where it is imaged for analysis (C). [8]
 
 ##
 
@@ -24,7 +24,7 @@ After acquisition, the TAG image is subtracted from the Control image to remove 
 
 <img src="https://github.com/user-attachments/assets/b2094886-e3b5-4514-9dc5-c28b8e4577ef" alt="Alt Text" width="1000" height="270">
 
-**Image 2** The Control and TAG images of participant COVIRM-016 of this study were used to visualize the subtracting of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
+**Image 2** Visualization of the subtraction of the TAG image from the Control image. This results in a perfusion-weighted image, which is an indirect measure of cerebral blood flow (CBF).
 
 ## 
 
