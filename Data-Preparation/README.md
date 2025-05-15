@@ -1,5 +1,5 @@
 ### Overview  
-These codes allow for the preparation of NIfTI files (.nii) from the raw data (in DICOM format (.dcm)) coming directly from the MRI. This raw data is available in a secured online server, such as CAIN. Below is an overview of the pipeline to prepare your data for CBF processing. 
+These codes allow for the preparation of NIfTI files (.nii) from the raw data (in DICOM format (.dcm)) coming directly from the MRI. This raw data is available in a secured online server. Below is an overview of the pipeline to prepare your data for CBF processing. 
 
 #### Tools needed 💡
 - Request access to a secured server to retrieve raw DICOM MRI data. 
@@ -11,12 +11,16 @@ These codes allow for the preparation of NIfTI files (.nii) from the raw data (i
 
 1️⃣ Create folders for each participant. In each folder, create a folder called "anat" (short for anatomy), and another folder called "perf" (short for perfusion). 
 
-2️⃣ In the server, locate the patient you need. *Note: To locate the COVIRM participant files, **filter** the Patient ID with "COV".*
+2️⃣ In the server, locate the patient you need. 
 
 3️⃣ Once located, click on one patient to reveal all the data on the lower half of the screen. Select and **download** the following: 
 - **MPRAGE_HR**: high resolution T1-weighted image showing brain anatomy.
 - **ep2d_DE_pCASL_LOFTmod_XA30 TE10 TE30**: both pCASL and BOLD images showing brain perfusion.
+
+  - Other options include: Comb5_ep2d_DE_pcasl1_TR4_1300_GRAPPA2_AP_RFbl 98
 - **ep2d_DE_pCASL_LOFTmod_XA30 M0**: magnetization map used to quantify blood perfusion.
+
+   - Other options include: ep2d_DE_pcasl1_M0_AP
 - **MPRAGE 1.5mm**: low resolution T1-weighted image showing brain anatomy.
 
 4️⃣ The folders will be downloaded as a .cab file. **Extract** the file into the appropriate subject folder. 
@@ -35,9 +39,7 @@ These codes allow for the preparation of NIfTI files (.nii) from the raw data (i
 
 9️⃣ Go to your local machine in your terminal and write the following to transfer all the files into the server. Note that this might take a few minutes (5-10 minutes) due to the amount of DICOM (.dcm) files. 
 
-> ***scp -r ~/path/to/your/raw/data/* nameofyour@local-machine:~/path/to/your/remote/data/folder/**
-
-> example: *scp -r ~/Documents/Hendrale/* s_sanami@perf-hpc01:~/Documents/covirm_data_processing/Hendrale/data/
+> ***scp -r ~/path/to/your/raw/data/* nameofyour@local-machine:~/path/to/your/remote/data/**
 
 ## 
 
@@ -56,22 +58,22 @@ These codes allow for the preparation of NIfTI files (.nii) from the raw data (i
 #### anat folder 🗂
 Here, you will find the high and low resolution images. .gz indicates that the data is zipped. Also, replace "###" with your participant number ID. 
 
-> **sub-###_acq-MPRAGE0p9_run-1_T1w.nii.gz** | T1-Weighted, High Resolution (T1HR) image
+> **sub-###_acq-MPRAGE0p9_run-1_T1w.nii.gz** (or any name of your choice) | T1-Weighted, High Resolution (T1HR) image 
 
-> **sub-###_acq-MPRAGE1p5_run-1_T1w.nii.gz** | T1-Weighted, Low Resolution (T1LR) image
+> **sub-###_acq-MPRAGE1p5_run-1_T1w.nii.gz** (or any name of your choice) | T1-Weighted, Low Resolution (T1LR) image
 
 #### perf folder 🗂
 Here, you will find the **pCASL** file; 
-> **sub-###_acq-pcaslDEe1_run-1_asl.nii.gz**
+> **sub-###_acq-pcaslDEe1_run-1_asl.nii.gz** (or any name of your choice) 
 
 The **BOLD** signal file;
-> **sub-###_acq-pcaslDEe2_run-1_asl.nii.gz**
+> **sub-###_acq-pcaslDEe2_run-1_asl.nii.gz** (or any name of your choice) 
 
 And the **M0** file;
 
-> **sub-###_acq-pcasl_run-1_m0scan.nii.gz**
+> **sub-###_acq-pcasl_run-1_m0scan.nii.gz** (or any name of your choice) 
 
-You will also notice .json files. These files are important for subsequent steps. They contain important metadata related to the scans. 
+You will also notice **.json** files. These files are important for subsequent steps. They contain important metadata related to the scans. 
 
 ## 
 
