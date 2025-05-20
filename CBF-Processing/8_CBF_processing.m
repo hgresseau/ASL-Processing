@@ -5,41 +5,29 @@ clear
 close all
 
 % CBF_estimation
-% do the subtraction first
-% Then perfusion processing
-% M0 processing
-% Do CBF processing with basil
-% Do T1 processing and register WM GM and CSF to the native space
-% Do partial volume correction
-% T1b is considered 1.65 (for future, estimate this number according to the
-% Hct number from blood draw.
-% For this study PLD is 1.3s, labeling duration is 1.8s
-% estimate ATT map, set --bat option as 1.3 for pcasl, do it according to
-% the oxford_asl
 
-addpath(genpath( '/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
-addpath(genpath( '/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
-addpath(genpath( '/NAS/home/s_sanami/Documents/Scripts/CIRM'))
-data_path='/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
-addpath('/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/NIfTI_tools/')
-code_path='/NAS/home/s_sanami/Documents/Scripts/ASLcodes';
+addpath(genpath( '/path/to/NIfTI/toolbox/NIfTI_20140122/'))
+addpath(genpath( '/path/to/ASL/toolbox/spm12'))
+addpath(genpath( '/path/to/Scripts/CIRM'))
+data_path='/path/to/data/';
+code_path='/path/to/Scripts/ASLcodes';
 
-subjects={'017','018','019','020','021','023','024','025','026','030','031'};
+subjects= % Add subject IDs
 
 for i=1:length(subjects)
 
   % ASL (Perfusion) File Paths
-  pcasl = [data_path 'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_asl_sub_new.nii.gz']; 
-  cbf_path=[data_path   'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_CBF.nii'];
-  mask_path=[data_path   'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_bold_mc_brain_mask.nii.gz'];
+  pcasl = [data_path 'path/to/new/sub/asl/file/typically/_asl_sub_new.nii.gz']; 
+  cbf_path=[data_path   'path/to/CBF/file/typically/_CBF.nii'];
+  mask_path=[data_path   'path/to/mc/bold/brain/mask/typically/_bold_mc_brain_mask.nii.gz'];
 
   % Parameter & Diffusion File Paths
-  params_path=[data_path   'COVIRM-' subjects{i} '/params.txt'];
+  params_path=[data_path   'path/to/params.txt/file'];
 
   % Output Folder Paths   
-  M0_path=[data_path 'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_acq-pcasl_run-1_m0scan.nii.gz'];
-  M0_bet=[data_path 'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_acq-pcasl_run-1_m0scan_bet.nii.gz'];
-  out_path_perf=[data_path 'COVIRM-' subjects{i} '/perf/perfusion_rest']; 
+  M0_path=[data_path 'path/to/M0/raw/file/typically/_acq-pcasl_run-1_m0scan.nii.gz'];
+  M0_bet=[data_path 'path/to/brain/extracted/M0/file/typically/_acq-pcasl_run-1_m0scan_bet.nii.gz'];
+  out_path_perf=[data_path 'path/to/rest/perfusion/output']; 
   perfusion_normal=[out_path_perf '/step1/mean_ftiss.nii.gz'];
 
   data=load_untouch_nii(pcasl);
@@ -47,7 +35,6 @@ for i=1:length(subjects)
   mask=load_untouch_nii(mask_path);
   mask_im=mask.img;
   sub= surround_subtraction(data_im);
-
 
   % CBF Estimation method_1 (inputs will be surround suctracted image (pcasl in the code)), mask path and a file cotains parameters). refer to the BASIL linke in the google doc
   % Perfusion with BASIL
@@ -69,7 +56,7 @@ for i=1:length(subjects)
   CBF_im(isnan(CBF_im))=0;
  
   per_data.img=CBF_im;
-  filename=[ data_path 'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_CBF.nii' ];
+  filename=[ data_path 'path/to/CBF/file/typically/_CBF.nii' ];
   save_untouch_nii(per_data,filename);
 
 end
