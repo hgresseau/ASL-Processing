@@ -4,17 +4,17 @@
 close all;
 
 % Define paths
-data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
-% addpath('/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/NIfTI_tools/')
+data_path = '/path/to/data/';
+% addpath('/path/to/NIfTI/toolbox/')
 
-subjects = {'016','017','018','019','020','021','023','024','025','026','030','031'}; % Add more subjects as needed
+subjects = % Insert participant ID
 
 for z = 1:length(subjects)
   subj = subjects{z};
   
   % Define file paths
-  pcasl_rest = [data_path 'COVIRM-' subj '/perf/sub-' subj '_asl_mc_bet_rest.nii.gz'];
-  pcasl_sub = [data_path 'COVIRM-' subj '/perf/sub-' subj '_asl_sub.nii.gz']; % Output file
+  pcasl_rest = [data_path 'path/to/mc/bet/rest/asl/image/typically/_asl_mc_bet_rest.nii.gz'];
+  pcasl_sub = [data_path 'path/to/asl/sub/image/typically/_asl_sub.nii.gz']; % Output file
   
   % Load ASL image
   nii = load_untouch_nii(pcasl_rest);
@@ -22,7 +22,6 @@ for z = 1:length(subjects)
   
   % Load data and remove the first time point
   ASL_vol = ASL_vol(:,:,:,3:end);
-  
   
   % Apply surround subtraction
   D_ASL_vol = surround_subtraction(ASL_vol);
