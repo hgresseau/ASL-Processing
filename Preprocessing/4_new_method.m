@@ -2,19 +2,15 @@
 % Modified by Hendrale Gresseau, Winter 2025
 
 % Add necessary paths for NIfTI and SPM toolboxes
-addpath(genpath('/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
-addpath(genpath('/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
-addpath(genpath('/NAS/home/s_sanami/Documents/Scripts/CIRM'))
-% Add necessary paths for NIfTI and SPM toolboxes
-addpath(genpath('/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
-addpath(genpath('/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
-addpath(genpath('/NAS/home/s_sanami/Documents/Scripts/CIRM'))
+addpath(genpath('/path/to/NIfTI/toolbox/NIfTI_20140122/'))
+addpath(genpath('/path/to/ASL/toolbox/spm12'))
+addpath(genpath('/path/to/Scripts/CIRM'))
 
 % Define paths
-data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
+data_path = '/path/to/data/';
 
 % Define subjects and rests
-subjects = {'016','017','018','019','020','021','023','024','025','026','030','031'}; % Add more subjects as needed
+subjects = % Add participant ID
 
 % Initialize cell arrays to store results
 results = struct();
@@ -25,7 +21,7 @@ for i = 1:length(subjects)
   subject_id = subjects{i};
   
   % Load Rest image
-  rest_path = [data_path 'COVIRM-' subject_id '/perf/sub-' subject_id '_asl_sub.nii.gz'];
+  rest_path = [data_path 'path/to/asl/sub/file/typically/_asl_sub.nii.gz'];
   rest = load_untouch_nii(rest_path);    
   rest_im = double(rest.img); % Convert to double for calculations
   
