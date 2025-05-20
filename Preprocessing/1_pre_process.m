@@ -4,30 +4,31 @@
 clear
 close all
 
-addpath(genpath( '/NAS/home/s_sanami/Documents/toolbox/NIfTI_20140122/'))
-addpath(genpath( '/NAS/home/s_sanami/Documents/ASLtoobox/spm12'))
-data_path='/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
-code_path='/NAS/home/s_sanami/Documents/Scripts/ASLcodes';
+addpath(genpath( '/path/to/NIfTI_20140122/toolbox/'))
+addpath(genpath( '/path/to/spm12/ASL/toolbox/files'))
+data_path='/path/to/your/data/';
+code_path='/path/to/Scripts/ASLcodes';
 
 % patients 
-subjects={'016','017','018','019','020','021','023','024','025','026','030','031'};
+subjects= % insert subjects
 
 for z=1:length(subjects)
   
   % Raw pCASL and BOLD files 
-  pcasl_raw=[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_acq-pcaslDEe1_run-1_asl.nii.gz'];
-  bold_raw=[data_path   'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_acq-pcaslDEe2_run-1_asl.nii.gz'];
+  pcasl_raw=[data_path 'path/to/raw/pcasl/data/typically/_acq-pcaslDEe1_run-1_asl.nii.gz'];
+  bold_raw=[data_path 'path/to/raw/bold/data/typically/_acq-pcaslDEe2_run-1_asl.nii.gz'];
   
   % Motion-Corrected (MC) files created after motion correction is applied
-  pcasl_mc=[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_asl_mc.nii.gz'];
-  bold_mc=[data_path   'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_bold_mc.nii.gz'];
-  
+  pcasl_mc=[data_path 'path/to/motion/corrected/pcasl/typically/_asl_mc.nii.gz'];
+  bold_mc=[data_path 'path/to/motion/corrected/bold/typically/_bold_mc.nii.gz'];
+
   % BET files created after applying brain extraction
-  pcasl_mc_bet=[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_asl_mc_bet.nii'];
-  bold_mc_bet=[data_path   'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_bold_mc_bet.nii'];
+  pcasl_mc_bet=[data_path 'path/to/brain/extracted/mc/pcasl/typically/_asl_mc_bet.nii'];
+  bold_mc_bet=[data_path 'path/to/brain/extracted/mc/bold/typically/_bold_mc_bet.nii'];
    
   % Brain Mask path created during brain extraction step
-  mask_path=[data_path   'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_bold_mc_brain_mask.nii.gz'];
+  mask_path=[data_path 'path/to/mc/bold/brain/mask/typically/_bold_mc_brain_mask.nii.gz'];
+
   %% Motion correction with FSL
   
   cmd=['mcflirt -in  ' pcasl_raw   ' -o ' pcasl_mc ' -mats -plots -report '];
@@ -36,7 +37,7 @@ for z=1:length(subjects)
   cmd=['mcflirt -in  ' bold_raw ' -o ' bold_mc ' -mats -plots -report '];
   system(cmd)
   
-  filename = [data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_asl_mc.nii.gz.par']; 
+  filename = [data_path 'path/to/mc/asl/.par/file/typically/_asl_mc.nii.gz.par'];
   
   M = dlmread(filename); % read in the file, skip the header row
   
@@ -54,7 +55,7 @@ for z=1:length(subjects)
   xlabel('Time (volumes)');
   ylabel('Translation (mm)');
   legend('x', 'y', 'z');
-  saveas(gcf,[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_motion1.png'], 'png')
+  saveas(gcf,[data_path '/path/to/output/translational/motion/.png/image'], 'png')
   % plot the rotation parameters
   figure;
   plot(rotation(:, 1), 'r');
@@ -65,11 +66,11 @@ for z=1:length(subjects)
   xlabel('Time (volumes)');
   ylabel('Rotation (degrees)');
   legend('pitch', 'roll', 'yaw');
-  saveas(gcf,[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_motion2.png'], 'png')
-
+  saveas(gcf,[data_path '/path/to/output/rotational/motion/.png/image'], 'png')
   % File renaiming
-  s1=movefile([data_path 'COVIRM-' subjects{z} '/perf/rsub-' subjects{z} '_acq-pcaslDEe1_run-1_asl.nii'],[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_asl_mc.nii']);
-  s=movefile([data_path 'COVIRM-' subjects{z} '/perf/rsub-' subjects{z} '_acq-pcaslDEe2_run-1_asl.nii'],[data_path 'COVIRM-' subjects{z} '/perf/sub-' subjects{z} '_bold_mc.nii']);
+  s1=movefile([data_path 'path/to/pcasl/file/typically/_acq-pcaslDEe1_run-1_asl.nii'],[data_path 'path/to/mc/asl/file/typically/_asl_mc.nii']);
+  s=movefile([data_path 'path/to/bold/file/typically/_acq-pcaslDEe2_run-1_asl.nii'],[data_path 'path/to/mc/bold/file/typically/_bold_mc.nii']);
+  
   % BET
   
   cmd=['bet2 ' bold_mc ' ' [bold_mc(1:end-7)] '_brain  -f 0.17 -m']; 
