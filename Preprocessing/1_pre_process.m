@@ -10,7 +10,7 @@ data_path='/path/to/your/data/';
 code_path='/path/to/Scripts/ASLcodes';
 
 % patients 
-subjects= % insert subjects
+subjects= % insert participant ID
 
 for z=1:length(subjects)
   
