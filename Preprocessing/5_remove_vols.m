@@ -4,31 +4,31 @@
 close all;
 
 % Define paths
-data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
-addpath('/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/NIfTI_tools/')
+data_path = '/path/to/data/';
+addpath('/path/to/NIfTI/tools/NIfTI_tools/')
 % notes
-% subjects={'016','017','018','019','020','021','023','024','025','026','030','031'};
+% subjects= % Add participant IDs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % note: subject #020: remove volumes 1 and 13
 % note: subject #026: remove volume 4
 % note: subject #031: remove volumes 1, 2 and 3
 subjects = {'031'}; % Add more subjects as needed
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 for z = 1:length(subjects)
   subj = subjects{z};
   
   % Define file paths
-  pcasl_sub = [data_path 'COVIRM-' subj '/perf/sub-' subj '_asl_sub.nii.gz'];
-  pcasl_new = [data_path 'COVIRM-' subj '/perf/sub-' subj '_asl_sub_new.nii.gz']; % Output file after removing outliers
+  pcasl_sub = [data_path 'path/to/asl/sub/file/typically/_asl_sub.nii.gz'];
+  pcasl_new = [data_path 'path/to/new/asl/sub/file/typically/_asl_sub_new.nii.gz']; % Output file after removing outliers
 
   % Load subtracted ASL image
   nii = load_untouch_nii(pcasl_sub);
   sub_im = nii.img; % Extract image data
 
-  % To remove vol 1, 2 and 3, we can keep all the volumes from 4 onwards.
+  % Example: To remove vol 1, 2 and 3, we can keep all the volumes from 4 onwards.
   new_img = sub_im(:,:,:, 4:end);
 
-  % To remove vol 1, we can keep all the volumes from 2 onwards. 
+  % Example: To remove vol 1, we can keep all the volumes from 2 onwards. 
   %new_img = new_img(:,:,:, 2:end);
 
   % Save the new perfusion-weighted image
