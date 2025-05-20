@@ -4,8 +4,8 @@
 clear
 close all
 
-addpath(genpath( '/path/to/NIfTI_20140122/toolbox/'))
-addpath(genpath( '/path/to/spm12/ASL/toolbox/files'))
+addpath(genpath('/path/to/NIfTI_20140122/toolbox/'))
+addpath(genpath('/path/to/spm12/ASL/toolbox/files'))
 data_path='/path/to/your/data/';
 code_path='/path/to/Scripts/ASLcodes';
 
