@@ -4,24 +4,22 @@
 close all;
 
 % Define paths
-data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
-addpath('/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/NIfTI_tools/')
+data_path = '/path/to/data/';
+addpath('/path/to/NIfTI/toolbox/NIfTI_tools/')
 
 
 % Define participants
-% subjects={'016','017','018','019','021','023','024','025','030'};
+% subjects= % insert participant IDs
 % file name: '_asl_sub.nii.gz'
-% Different file name for participants 020, 026 and 031
 % file name: '_asl_sub_new.nii.gz'
-subjects={'020','026','031'};
 
 % Loop through each participant
 for z = 1:length(subjects)
   subj = subjects{z};
 
   % Define file paths
-  pcasl_sub = [data_path 'COVIRM-' subj '/perf/sub-' subj '_asl_sub_new.nii.gz'];
-  pcasl_zeroed = [data_path 'COVIRM-' subj '/perf/sub-' subj '_asl_sub_new.nii.gz']; % Output file
+  pcasl_sub = [data_path 'path/to/new/asl/sub/file/typically/_asl_sub_new.nii.gz'];
+  pcasl_zeroed = [data_path 'path/to/zeroed/asl/sub/file/typically/_asl_sub_new.nii.gz']; % Output file
 
   % Load ASL image
   nii = load_untouch_nii(pcasl_sub);
