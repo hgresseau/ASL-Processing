@@ -1,18 +1,17 @@
-% Code by Hendrale Gresseau
+% Code by Hendrale Gresseau, Winter 2025
 % Approved by Safa Sanami
 
 % Define paths
-data_path = '/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/data/';
-addpath('/NAS/home/s_sanami/Documents/covirm_data_processing/Hendrale/NIfTI_tools/')
+data_path = '/path/to/data/';
+addpath('/path/to/NIfTI/toolbox/NIfTI_tools/')
 
 % List of subjects (you can expand this with all participants)
-%subjects = {'001', '002', '006', '007', '008', '016', '017', '018', '019', '020', '021', '023', '024', '025', '026', '030', '031'};
-subjects={'021'};
+subjects= % Insert participant ID
 
 % Loop through each subject
 for i = 1:length(subjects)
     % Define the CBF path for the current subject
-    cbf_path = [data_path 'COVIRM-' subjects{i} '/perf/sub-' subjects{i} '_CBF.nii'];
+    cbf_path = [data_path 'path/to/CBF/file/typically/_CBF.nii'];
     
     % Load the CBF image (NIfTI format)
     cbf_nii = load_untouch_nii(cbf_path);
