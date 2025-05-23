@@ -1,4 +1,4 @@
-% Code Template by Safa Sanami
+% Code by Safa Sanami
 % Modified by Hendrale Gresseau, Winter 2025
 
 clear
